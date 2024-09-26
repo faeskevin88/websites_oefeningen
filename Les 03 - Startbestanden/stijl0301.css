@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(0, 47, 78);
+}
+.logo-top{
+    width: 200px;
+    padding: 20px;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    color: orangered;
+}
+hr{
+    border: 1px solid rgb(0, 47, 78);
+}
+p{
+    margin: 0;
+    padding: 15px;
+    max-width: 1000px;
+}
+a{
+    text-decoration: underline;
+    color: rgb(0, 47, 78);
+}
+a:hover{
+    color: orangered;
+}
+.logo-bottom-container{
+    background-color: rgb(0, 47, 78);
+    padding: 10px;
+    text-align: center;
+}
+.logo-bottom{
+    width: 200px;
+}
