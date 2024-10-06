@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 27px;
+}
+.dancing-script {
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;color: white;
+background-color: orangered;
+width: 250px;
+font-size: 40px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid lightgray;
+    text-align: center; 
+    padding: 15px;
+    height: 50px;
+    width: 62px;
+}
+caption {
+    font-size: 12px;
+    padding-bottom: 10px;
+    caption-side: bottom;
+}
+tr{
+    height: 50px;
+}
+#tmlogo{
+    width: 150px;
+}
+.tmh1{
+    color: orangered;
+}
+.nadruk{
+    font-weight: bold;
+}
