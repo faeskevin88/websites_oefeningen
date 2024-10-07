@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 05 Oefening 01</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+        }
+        form {
+            width: 40%;
+            background-color: #fff;
+        }
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #85b9f0;
+        }
+        input[type="text"]:focus {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            padding: 15px 20px;
+            background-color: lightgray;
+            border: 1px solid darkgray;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="POST">
+        <div class="form-control">
+            <label for="input1">Voornaam:</label>
+            <input type="text" id="input1" placeholder="Voornaam">
+        </div>
+        <div class="form-control">
+            <label for="input2">Familienaam:</label>
+            <input type="text" id="input2" placeholder="Familienaam">
+        </div>
+        <input type="submit" value="Registreren">
+    </form>
+</body>
+</html>
