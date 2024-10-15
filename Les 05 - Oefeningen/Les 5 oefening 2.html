@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 05 Oefening 02</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto
+        }
+        .form-control {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 5px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: lightgray;
+            border: 1px solid darkgray;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0px;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(173, 173, 173);
+        }
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="POST">
+        <div class="form-control">
+            <label for="input1">Voornaam:</label>
+            <input type="text" id="input1" placeholder="Voornaam">
+        </div>
+        <div class="form-control">
+            <label for="input2">Familienaam:</label>
+            <input type="text" id="input2" placeholder="Familienaam">
+        </div>
+        <div class="form-control">
+            <label for="input1">Gebruikersnaam:</label>
+            <input type="text" id="input1" placeholder="mail@thomasmore.be">
+        </div>
+        <div class="form-control">
+            <label for="input1">Nickname:</label>
+            <input minlength="5" maxlength="15" type="text" id="input1" required>
+        </div>
+        <div class="form-control">
+            <label for="input1">Paswoord:</label>
+            <input type="password" id="input1" required>
+        </div>
+        <div class="form-control">
+            <label for="input1">Herhaal paswoord:</label>
+            <input type="password" id="input1" required>
+        </div>
+
+        <input type="submit" value="Registreren">
+    </form>
+</body>
+</html>
