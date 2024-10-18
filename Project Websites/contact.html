@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
       * {
         box-sizing: border-box;
@@ -19,7 +23,6 @@
         font-family: "Montserrat", sans-serif;
         padding: 10px;
         background: #eae6e4;
-        font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
         max-width: 1280px;
@@ -76,9 +79,54 @@
       img {
         width: 200px;
       }
-      
-      .img-icon{
+
+      .img-icon {
         width: 100px;
+      }
+
+      .footer {
+        background-color: #5e5d5d;
+        color: #eae6e4;
+        text-align: center;
+        padding: 14px 0;
+        margin-top: 20px;
+        border-top: 1px solid #000000;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container-form {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
       }
     </style>
   </head>
@@ -91,28 +139,103 @@
       <a href="experiences.html">Experiences</a>
       <a href="aboutme.html">About me</a>
       <a href="contact.html">Contact</a>
+      <a href="cv.html">CV</a>
     </div>
 
     <div class="grid-container">
-      <class="artikel">
-        <img src="img/c-sharp.png" alt="C#" title="C#" />
+      <div class="artikel">
         <p>Hoe kan je mij contacteren?</p>
-        <a>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-          deleniti, voluptate magnam laborum fugiat cupiditate, consectetur
-          iusto dolore ipsam repellat non natus suscipit illo? Molestiae minus
-          ratione sint sit, tenetur aspernatur vero quia fuga, ullam, obcaecati
-          dicta at molestias consequuntur ducimus mollitia ab vitae inventore
-          rerum nulla! Modi, corporis eos.
-          <br>
-          <br>
-          <a href="https://www.linkedin.com/in/williamhgates/"><img class="img-icon" src="img/ldn.png" alt="Linkedin" title="Linkedin"></a>
-          <a href="https://www.facebook.com/zuck/"><img class="img-icon" src="img/fb.png" alt="Facebook" title="Facebook"></a>
-          <a href="https://x.com/elonmusk"><img class="img-icon" src="img/x.png" alt="X" title="X"></a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="img-icon" src="img/yt.png" alt="Youtube" title="Youtube"></a>
-          <a href=""></a><img class="img-icon" src="img/hireme.png" alt="Hire me" title="Hire me"></a>
-        </p>
+        <br />
+        <div class="container-form">
+          <form action="mailto:kevin.faes@student.thomasmore.be" method="POST">
+            <label for="naam">Naam</label>
+            <input
+              type="text"
+              id="naam"
+              name="naam"
+              placeholder="Jou naam"
+              required
+            />
+
+            <label for="familienaam">Familienaam</label>
+            <input
+              type="text"
+              id="familienaam"
+              name="familienaam"
+              placeholder="Jou familienaam"
+              required
+            />
+
+            <label for="email">E-mailadres</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Jou e-mailadres"
+              required
+            />
+
+            <label for="onderwerp">Onderwerp</label>
+            <input
+              type="text"
+              id="onderwerp"
+              name="onderwerp"
+              placeholder="Wat is het onderwerp"
+              required
+            />
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Schrijf hier je boodschap"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+          <br />
+          <p>Je kan me ook vinden op deze sociale media.</p>
+          <br />
+          <a href="https://www.linkedin.com/in/williamhgates/"
+            ><img
+              class="img-icon"
+              src="img/ldn.png"
+              alt="Linkedin"
+              title="Linkedin"
+          /></a>
+          <a href="https://www.facebook.com/zuck/"
+            ><img
+              class="img-icon"
+              src="img/fb.png"
+              alt="Facebook"
+              title="Facebook"
+          /></a>
+          <a href="https://x.com/elonmusk"
+            ><img class="img-icon" src="img/x.png" alt="X" title="X"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            ><img
+              class="img-icon"
+              src="img/yt.png"
+              alt="Youtube"
+              title="Youtube"
+          /></a>
+          <a
+            href="mailto:kevin.faes@student.thomasmore.be?subject=You%27re%20hired&body=Kevin%20ik%20wil%20je%20inhuren!"
+          >
+            <img
+              class="img-icon"
+              src="img/hireme.png"
+              alt="Hire me"
+              title="Hire me"
+            />
+          </a>
+        </div>
       </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Faes Kevin.</p>
     </div>
   </body>
 </html>

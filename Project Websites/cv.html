@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        padding: 10px;
+        background: #eae6e4;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 1280px;
+        margin: auto;
+      }
+
+      .header {
+        height: 250px;
+        background-image: url("img/header.jpeg");
+        background-repeat: no-repeat;
+        background-color: #3b3a38;
+        background-position: right;
+      }
+
+      .header-tekst {
+        position: relative;
+        top: 50%;
+        left: 50px;
+        font-size: 64px;
+        color: #a4918e;
+        text-shadow: -2px 2px 0 #3b3a38;
+      }
+
+      .topnav {
+        background-color: #5e5d5d;
+        padding: 14px 0px;
+        border: 1px solid #000000;
+      }
+
+      .topnav a {
+        color: #eae6e4;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+
+      .topnav a:hover {
+        background-color: #a7a5a5;
+        color: #3b3a38;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .artikel {
+        background-color: white;
+        padding: 20px;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+      }
+
+      .left-column {
+        background-color: white;
+        padding: 20px;
+      }
+
+      .right-column {
+        background-color: white;
+        padding: 20px;
+      }
+
+      h1, h2 {
+        color: #3b3a38;
+      }
+
+      .footer {
+        background-color: #5e5d5d;
+        color: #eae6e4;
+        text-align: center;
+        padding: 14px 0;
+        margin-top: 20px;
+        border-top: 1px solid #000000;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+
+      input[type=text],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type=submit] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      @media (max-width: 768px) {
+        .content-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-tekst">Faes Kevin</div>
+    </div>
+
+    <div class="topnav">
+      <a href="experiences.html">Experiences</a>
+      <a href="aboutme.html">About me</a>
+      <a href="contact.html">Contact</a>
+      <a href="cv.html">CV</a>
+    </div>
+
+    <div class="grid-container">
+      <div class="artikel">
+        <div class="content-grid">
+          <div class="left-column">
+            <h2>Gegevens:</h2>
+            <div class="contact-info">
+              <p>Rivierstraat 50, 2300 Turnhout</p>
+              <p>0479 27 37 67</p>
+              <p><a href="mailto:kevin.faes@student.thomasmore.be">kevin.faes@student.thomasmore.be</a></p>
+              <p>° 6 oktober 1988 in Turnhout</p>
+              <p>Ongehuwd</p>
+            </div>
+
+            <div>
+              <h2>Opleidingen:</h2>
+              <ul>
+                <li>
+                  <strong>Graduaat Programmeren</strong> - Thomas More Turnhout (2024 - Heden)
+                  <ul>
+                    <li>Programming Essentials (C#)</li>
+                    <li>Database Essentials (Azure, SQL, Docker)</li>
+                    <li>Websites (HTML/CSS)</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Technicus Automatisering</strong> - VDAB Turnhout (2015 - 2016)
+                  <ul>
+                    <li>Basis elektriciteit</li>
+                    <li>Pneumatica/Electro-pneumatica</li>
+                    <li>Schakeltechnieken</li>
+                    <li>Frequentiesturingen</li>
+                    <li>Veiligheidstechnieken</li>
+                    <li>Opsporen van storingen</li>
+                    <li>Ontwerpen en montage van besturingskast met Micromaster frequentiesturing</li>
+                    <li>PLC programmeren in S7</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Elektronica Automatisering (HBO5)</strong> - CVO Turnhout (2013 - 2014)
+                </li>
+                <li>
+                  <strong>Houtbewerking (A2 getuigschrift)</strong> - VTST Turnhout (2001 - 2006)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="work-experience">
+              <h2>Werkervaring:</h2>
+              <ul>
+                <li><strong>Hef en reach-truckchauffeur</strong> - Vos Logistics (10/2023 - 08/2024)</li>
+                <li><strong>Siteverantwoordelijke</strong> - Biogas de Biezen/Mestverwerking Leemans (05/2023 - 08/2023)</li>
+                <li><strong>Allround magazijnier/reserve teamleader (weekendploeg)</strong> - Henco Industries (06/2021 - 04/2023)</li>
+                <li><strong>Hef en reach-truckchauffeur/reserve teamleader</strong> - Vos Logistics (12/2017 - 05/2021)</li>
+                <li><strong>Technieker</strong> - Sterkens Alarmsystemen (06/2017 - 12/2017)</li>
+                <li><strong>Technieker</strong> - Glacio (01/2017 - 05/2017)</li>
+                <li><strong>Technieker</strong> - Iris Anticorrosion (04/2016 - 12/2016)</li>
+                <li><strong>Operator in de stansafdeling en de plak-/plooi afdeling</strong> - Smurfit Kappa Turnhout (08/2014 - 05/2015)</li>
+                <li><strong>Montage en afwerking van liften</strong> - Lift-It Vosselaar (06/2014 - 08/2014)</li>
+                <li><strong>Technisch operator/intern transport</strong> - Soudal Turnhout (09/2006 - 06/2014)</li>
+              </ul>
+            </div>
+
+            <div class="skills">
+              <h2>Vaardigheden:</h2>
+              <ul>
+                <li>Flexibel</li>
+                <li>Communicatief</li>
+                <li>Resultaatgericht</li>
+                <li>Leergierig</li>
+                <li>Ambitieus</li>
+                <li>Kwaliteitsgericht</li>
+                <li>Humoristisch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Faes Kevin.</p>
+      </div>
+
+  </body>
+</html>

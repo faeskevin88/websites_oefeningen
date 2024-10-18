@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
       * {
         box-sizing: border-box;
@@ -19,7 +23,6 @@
         font-family: "Montserrat", sans-serif;
         padding: 10px;
         background: #eae6e4;
-        font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
         max-width: 1280px;
@@ -62,19 +65,58 @@
       }
 
       .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
         margin-top: 20px;
       }
 
       .artikel {
+        display: flex;
+        align-items: flex-start;
         background-color: white;
         padding: 20px;
+        gap: 20px;
       }
 
-      img {
+      .artikel img {
         width: 200px;
+        height: auto;
+        margin-right: 20px;
+        border: 1px solid black;
+      }
+
+      .artikel div {
+        flex: 1;
+        text-align: left;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .footer {
+        background-color: #5e5d5d;
+        color: #eae6e4;
+        text-align: center;
+        padding: 14px 0;
+        margin-top: 20px;
+        border-top: 1px solid #000000;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .artikel {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .artikel img {
+          margin: 0 0 20px 0;
+        }
       }
     </style>
   </head>
@@ -87,33 +129,44 @@
       <a href="experiences.html">Experiences</a>
       <a href="aboutme.html">About me</a>
       <a href="contact.html">Contact</a>
+      <a href="cv.html">CV</a>
     </div>
 
     <div class="grid-container">
       <div class="artikel">
-        <img src="img/htmlcss.png" alt="html css" title="html css" />
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-          deleniti, voluptate magnam laborum fugiat cupiditate, consectetur
-          iusto dolore ipsam repellat non natus suscipit illo? Molestiae minus
-          ratione sint sit, tenetur aspernatur vero quia fuga, ullam, obcaecati
-          dicta at molestias consequuntur ducimus mollitia ab vitae inventore
-          rerum nulla! Modi, corporis eos.
-        </p>
+        <img src="img/em.jpg" alt="Ella en Mats" title="Ella en Mats" />
+        <div>
+          <h2>Mijn dagelijkse leven.</h2>
+
+          <p>
+            Hallo, mijn naam is Kevin Faes, 36 jaar, en ik woon in Turnhout
+            samen met mijn verloofde Jitske en onze twee kinderen, Mats en Ella.
+            Ons dagelijks leven draait vaak om leuke activiteiten met de
+            kinderen, zoals fietsuitstappen, zwemmen, het verkennen van
+            dierentuinen en het maken van wandeltochten. Thuis zijn we vaak
+            creatief bezig met knutselen en spelletjes.</p>
+          </p>
+        </div>
       </div>
+
       <div class="artikel">
-        <img src="img/c-sharp.png" alt="C#" title="C#" />
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-          deleniti, voluptate magnam laborum fugiat cupiditate, consectetur
-          iusto dolore ipsam repellat non natus suscipit illo? Molestiae minus
-          ratione sint sit, tenetur aspernatur vero quia fuga, ullam, obcaecati
-          dicta at molestias consequuntur ducimus mollitia ab vitae inventore
-          rerum nulla! Modi, corporis eos.
-        </p>
+        <img src="img/1.png" alt="Games" title="Games" />
+        <div>
+          <h2>Mijn interesses.</h2>
+
+            <p>In mijn vrije tijd geniet ik van games zoals World of Warships en het mmo-genre, mobiele games zoals Clash Royale en Clash
+            of Clans. Daarnaast ben ik momenteel bezig met het ontwikkelen van
+            een mobiele app die jonge kinderen helpt bij het leren van letters,
+            het vormen van woorden, en het begrijpen van cijfers. Dit project
+            combineert mijn passie voor technologie met mijn liefde voor het
+            stimuleren van de ontwikkeling van mijn kinderen.</p>
+          
+        </div>
       </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Faes Kevin.</p>
     </div>
   </body>
 </html>
