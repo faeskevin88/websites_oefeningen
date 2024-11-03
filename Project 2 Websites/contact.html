@@ -4,113 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
     <style>
-      header {
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .dropdown-menu.bg-dark .dropdown-item {
-    background-color: #343a40;
-    color: white;
-  }
-  
-  .dropdown-menu.bg-dark .dropdown-item:hover {
-    background-color: #495057;
-    color: white;
-  }
-
-
-
-  body{
-    margin-top:20px;
-    background:#eee;
-}
-.gradient-brand-color {
-    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
-    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
-    color: #fff;
-}
-.contact-info__wrapper {
-    overflow: hidden;
-    border-radius: .625rem .625rem 0 0
-}
-
-@media (min-width: 1024px) {
-    .contact-info__wrapper {
-        border-radius: 0 .625rem .625rem 0;
-        padding: 5rem !important
-    }
-}
-.contact-info__list span.position-absolute {
-    left: 0
-}
-.z-index-101 {
-    z-index: 101;
-}
-.list-style--none {
-    list-style: none;
-}
-.contact__wrapper {
-    background-color: #fff;
-    border-radius: 0 0 .625rem .625rem
-}
-
-@media (min-width: 1024px) {
-    .contact__wrapper {
-        border-radius: .625rem 0 .625rem .625rem
-    }
-}
-@media (min-width: 1024px) {
-    .contact-form__wrapper {
-        padding: 5rem !important
-    }
-}
-.shadow-lg, .shadow-lg--on-hover:hover {
-    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
-}
-
-
-
-
     </style>
   </head>
   <body>
     <header>
-      <img src="img/header.jpg" alt="Header" />
+      <img src="img/header.jpg" alt="Header" title="Header"/>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
       <div class="container-fluid">
         <a class="navbar-brand">Faes Kevin</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link mx-2" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link mx-2 dropdown-toggle"   
-                 href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link mx-2 dropdown-toggle"
+                href="#"
+                role="button"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Experiences
               </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="experiences.html">My Experiences</a></li>
-                <li><a class="dropdown-item" href="cv.html">Curriculum Vitae</a></li>
+              <ul
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="experiences.html"
+                    >My Experiences</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cv.html">Curriculum Vitae</a>
+                </li>
               </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link mx-2" href="aboutme.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 active" aria-current="page" href="contact.html">Contact</a>
+              <a
+                class="nav-link mx-2 active"
+                aria-current="page"
+                href="contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -118,97 +90,182 @@
     </nav>
 
     <main class="container mt-3">
-          <div class="contact__wrapper shadow-lg mt-n9">
-              <div class="row no-gutters">
-                  <div class="col-lg-4 contact-info__wrapper bg-dark bg-gradient text-white p-5 order-lg-2">
-                      <h3 class="color--white mb-5">Contact me</h3>
-          
-                      <ul class="contact-info__list list-style--none position-relative z-index-101">
-                          <li class="mb-4 pl-4">
-                              <span class="position-absolute"><i class="fas fa-envelope"></i></span> info@faeskevin.be
-                          </li>
-                          <li class="mb-4 pl-4">
-                              <span class="position-absolute"><i class="fas fa-phone"></i></span> +32479273767
-                          </li>
-                          <li class="mb-4 pl-4">
-                              <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> Faes Kevin
-                              <br> Rivierstraat 50
-                              <br> Turnhout 2300
-          
-                              <div class="mt-3">
-                                  <a href="https://www.google.com/maps" target="_blank" class="text-link link--right-icon text-white">Route <i class="link__icon fa fa-directions"></i></a>
-                              </div>
-                          </li>
-                      </ul>
+      <div class="contact__wrapper shadow-lg mt-n9">
+        <div class="row no-gutters">
+          <div
+            class="col-lg-4 contact-info__wrapper bg-dark bg-gradient text-white p-5 order-lg-2"
+          >
+            <h3 class="color--white mb-5">Contact me</h3>
 
+            <ul
+              class="contact-info__list list-style--none position-relative z-index-101"
+            >
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <a
+                  href="mailto:kevin.faes@student.thomasmore.be"
+                  class="text-white"
+                  >info@faeskevin.be</a
+                >
+              </li>
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                <a href="tel:+32479273767" class="text-white">+32479273767</a>
+              </li>
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></span>
+                Faes Kevin <br />
+                Rivierstraat 50 <br />
+                Turnhout 2300
+
+                <div class="mt-3">
+                  <a
+                    href="https://maps.app.goo.gl/SdbHLcugfn1SByLQ9"
+                    target="_blank"
+                    class="text-link link--right-icon text-white"
+                    >Route <i class="link__icon fa fa-directions"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col contact-form__wrapper p-5 order-lg-1">
+            <form
+              action="https://tm-statweb.be/forms.php"
+              method="POST"
+              class="contact-form form-validate"
+            >
+              <div class="row">
+                <div class="row mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="firstName"
+                      >Voornaam</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      required
+                    />
                   </div>
-          
-                  <div class="col contact-form__wrapper p-5 order-lg-1">
-                      <form action="#" class="contact-form form-validate" novalidate="novalidate">
-                          <div class="row">
-                              <div class="row mb-3">
-                                  <div class="form-group">
-                                      <label class="required-field" for="firstName">Voornaam</label>
-                                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Voornaam">
-                                  </div>
-                              </div>
-          
-                              <div class="row mb-3">
-                                  <div class="form-group">
-                                      <label class="required-field" for="lastName">Achternaam</label>
-                                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Achternaam">
-                                  </div>
-                              </div>
-          
-                              <div class="row mb-3">
-                                  <div class="form-group">
-                                      <label class="required-field" for="email">Email</label>
-                                      <input type="text" class="form-control" id="email" name="email" placeholder="Jou email">
-                                  </div>
-                              </div>
-          
-                              <div class="row mb-3">
-                                  <div class="form-group">
-                                      <label for="phone">Telefoonnummer</label>
-                                      <input type="tel" class="form-control" id="phone" name="phone">
-                                  </div>
-                              </div>
-          
-                              <div class="row mb-3">
-                                  <div class="form-group">
-                                      <label class="required-field" for="message">Onderwerp</label>
-                                      <textarea class="form-control" id="message" name="message" rows="4"></textarea>
-                                  </div>
-                              </div>
-          
-                              <div class="row-sm-12 mb-3">
-                                  <button type="submit" name="submit" class="btn btn-dark">Submit</button>
-                              </div>
-          
-                          </div>
-                      </form>
-                  </div>          
-              </div>
-      </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="lastName"
+                      >Achternaam</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      name="lastName"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
 
+                <div class="row mb-3">
+                  <div class="form-group mb-3">
+                    <label for="exampleFormControlSelect1"
+                      >Waarover gaat je vraag</label
+                    >
+                    <select
+                      class="form-control"
+                      id="exampleFormControlSelect1"
+                      required
+                    >
+                      <option value="">Selecteer een onderwerp</option>
+                      <option>Webdesign</option>
+                      <option>Programming</option>
+                      <option>Database</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="message"
+                      >Onderwerp</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row-sm-12 mb-3">
+                  <button type="submit" name="submit" class="btn btn-dark">
+                    Verzend
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer class="bg-dark text-white py-3 mt-3">
+    <footer class="bg-dark text-white py-3 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-left">
             <p class="mb-0">&copy; 2024 Faes Kevin. All lefts reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-right">
-            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white mr-3"><i class="fab fa-x"></i></a>
-            <a href="#" class="text-white mr-3"><i class="fab fa-github"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              href="https://www.facebook.com/zuck/"
+              target="_blank"
+              class="text-white mr-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://x.com/elonmusk"
+              target="_blank"
+              class="text-white mr-3"
+              ><i class="fab fa-x"></i
+            ></a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="text-white mr-3"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/williamhgates/"
+              target="_blank"
+              class="text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
       </div>
     </footer>
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
